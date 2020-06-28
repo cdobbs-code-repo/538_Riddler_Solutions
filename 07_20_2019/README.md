@@ -18,6 +18,6 @@ To determine if a state has only unique 2x2 cutouts, I wrote a separate module t
 0 1<br />
 1 1<br />
 
-...then the value for that cutout would be 0x1 + 1x3 + 1x5 + 1x11 = 19. Since each possible output is unique, I just create a list of all 9 cutout products for a given 4x4 state and then I determine whether there are repeats by using the cute expression "len(mylist) <> len(set(mylist))" as set's remove repeats. 
+...then the value for that cutout would be 0\*1 + 1\*3 + 1\*5 + 1\*11 = 19. Since each possible output is unique, I just create a list of all 9 cutout products for a given 4x4 state and then I determine whether there are repeats by using the cute expression "len(mylist) <> len(set(mylist))" as set's remove repeats. 
 
 By doing this I found 6,188 possible solutions. I also added code to find all solutions that weren't just rotations or mirror images of the states. Doing this I found 799 'unique' states. 
